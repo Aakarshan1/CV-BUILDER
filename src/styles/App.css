@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* outline: 1px solid red; */
+}
+
+@media screen and (max-width:1120px) {
+  .App {
+    flex-direction: column;
+    height: auto;
+  }
+}

@@ -1,0 +1,138 @@
+.preview-section {
+  display: grid;
+  place-items: center;
+  background-color: #656e83;
+  flex: 1;
+}
+
+.short-info {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+a {
+  color: black;
+}
+
+.page {
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  width: 433px;
+  height: 610px;
+  padding: 30px;
+}
+
+.page .square {
+  position: relative;
+  left: 360px;
+  top: -50px;
+  height: 15px;
+  width: 15px;
+  background-color: black;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.empBox {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* .empBox,
+.empBox > *,
+.empBox-right > *,
+.empBox-right div > * {
+  outline: 1px solid;
+} */
+
+.page h1 {
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+
+.employee-title {
+  font-size: 14px;
+}
+
+.degree {
+  font-size: 13px;
+}
+.page .resume-heading {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+p {
+  font-size: 12px;
+  color: #454545;
+}
+
+.preview-section .btn-primary {
+  border-radius: 4px;
+  background-color: #1a91f0;
+  padding: 13px 24px;
+  font-weight: 600;
+}
+
+.preview-section .btn-primary:hover {
+  background-color: #1170cd;
+}
+
+@media screen and (max-width: 1120px) {
+  .preview-section {
+    padding: 50px;
+    overflow-x: scroll;
+  }
+
+  .page {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  p {
+    font-size: 12px;
+  }
+  .page {
+    border-radius: 0px;
+    overflow: hidden;
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .page .square {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 40px;
+    right: 40px;
+    left: unset;
+  }
+
+  .page h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .page .resume-heading {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+  }
+}
